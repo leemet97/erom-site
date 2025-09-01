@@ -1,0 +1,678 @@
+ *{margin: 0; padding: 0; text-decoration: none; list-style: none; }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: aliceblue;
+        }
+        nav{
+            width: 100%;
+            height: 120px;
+            background-color: rgb(248, 243, 243);
+            display: flex;
+            align-items: center;
+            margin-left: 0px;
+        }   
+        .menus{
+            width: 50%;           
+            display: flex;
+            gap: 100px; 
+            margin-left: 300px;    
+        }
+        .menus button{
+            font-size: 20px;
+            font-weight:normal ;
+            background: none;
+            cursor: pointer;
+            border: none;
+        }
+        .flag img{
+            margin-left: 200px;
+            height: 35px;
+        }      
+        .ri-align-left{
+            font-size: 50px;
+            cursor: pointer;
+            margin-left: 50px;
+        }
+        .logo{
+            width: 100px;
+            font-size: 100px;
+            margin-left: 160px;
+            align-items: center;
+        }
+        /* .content{
+            width: 100%;
+            height: 10%;
+            
+            background-color: blueviolet;
+        } */
+        .section{
+            width: 100%;
+            overflow: hidden;
+            object-fit: cover;
+        }
+        /*첫번째 화면(section1)*/
+        .section1{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .section1 > img{
+            position: absolute;
+           width: 100%;
+           height: 100%;
+           object-fit: cover;
+           z-index: 0;
+        }  
+        .slider{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+        .track{
+           display: flex;
+           transition:all 0.5s linear;
+           width: 100%;
+           height: 100%;
+        }
+        .slider .slide{
+    	    flex: 0 0 100%;   
+   	        height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 0.3s linear;
+        }                   
+        .section1 .textBox1{
+            position:absolute;
+            left:10%; top: 30%;       
+            z-index: 3;
+            color: #fff;    
+        }
+        .section1 h3{
+            position: absolute;
+            top: 0px;
+            left: -10%;
+            color: #333;
+            font-size: 30px;
+            font-weight: bold;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.3);          
+        }       
+        .section1 .textBox1 .sec1name1{
+            display:inline-block ;
+            background-color: rgb(20, 87, 20);
+            border-radius: 10px;
+            color: #fff;
+            padding: 5px 15px;
+            font-size: 20px;
+            margin-bottom: 10px;
+
+        }
+        .section1 .textBox1 h2{
+            font-size: 40px;
+            font-weight:normal ;
+            line-height: 1.6;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+            margin-bottom: -10px;
+        }
+        .section1 .textBox1 .highlight{
+            color: rgb(120, 167, 50) ;
+            font-size: 40px;
+            font-weight: normal;
+            line-height: 1.6;
+        }
+        .section1 .textBox1 h4{
+            font-size: 22px;
+            font-weight: 500;
+            color: #444;          
+            line-height: 1.4;
+            margin-bottom: 50px;
+            margin-top: 50px;
+         }
+         .view{
+            width: 150px;
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 30px;
+            display: inline-block;
+            background-color: rgb(8, 95, 91);
+            color: #fff;
+            border-radius: 30px;
+            cursor: pointer;
+            padding: 10px 20px;
+            transition:all 0.3s;
+            display: flex;
+            justify-content: center;
+         }
+         .view:hover{
+            background-color: #499167;
+         }
+         .arrowBox {
+           position: absolute;
+           right: 150px;
+           bottom: 90px;
+           display: flex;
+           align-items: center;
+           gap: 20px;
+           z-index: 999;
+           }
+        .arrowBox img{
+            width: 50px;
+            height: 20px;
+            cursor: pointer;
+            background-color: transparent;
+            transition: 0.3s;
+         }    
+        .arrowBox .img:hover {
+            background-color: #eee;
+        }
+        .top-btn {
+            position: fixed;
+            right: 40px;
+            bottom: 100px;
+            width: 60px;
+            height: 60px;
+            background: black;
+            color:white;
+            border: none;           
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: 0.3s;
+            z-index: 999;
+        }
+        .top-btn:hover {
+            background: linear-gradient(90deg, #009688, #00c853);
+            border-radius: 50%;
+        }
+        
+         /*두번째 화면(section2)*/
+         .section2{
+            margin-top: 0;
+            padding-top: 100px;
+            position: relative;
+            width: 100%;
+            height: 80vh;   
+            background-color: rgb(248, 243, 243);
+            overflow: hidden;
+         }    
+        .section2 .textBox2{
+
+        }
+         .section2 .sec2Text1{
+            text-align: center;
+            font-size: 50px;          
+            margin-bottom: 60px;
+         }
+         .section2 .sec2Text2{
+            text-align: center;
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom:10px ;
+        }
+        .section2 .sec2Text3{
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;   
+            margin-bottom: 100px;
+        }
+        .section2 .sec2imgBox{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+        }
+        .section2 .sec2imgBox > div.iconBox_on {
+            opacity: 1;
+            transform: translate(0,0);
+        }
+
+        .section2 .sec2imgBox .iconBox1{
+            text-align: center;
+            display: block;
+            margin: 0 40px;
+            width: auto;
+            border-right:1px dashed lightgray ;          
+            transform: translate(-100px, 0);
+            transition: all 0.3s ease;
+        }
+        .section2 .sec2imgBox .iconBox2{
+            text-align: center;
+            display: block;
+            margin: 0 40px;
+            width: auto;
+            border-right:1px dashed lightgray ;          
+            transform: translate(0, 100px);
+            transition: all 0.3s ease;
+        }
+        
+        .section2 .sec2imgBox .iconBox3{
+            text-align: center;
+            display: block;
+            margin: 0 40px;
+            width: auto;
+            border-right:1px dashed lightgray ;          
+            transform: translate(0, -100px);
+            transition: all 0.3s ease;
+        }
+        .section2 .sec2imgBox .iconBox4{
+            text-align: center;
+            display: block;
+            margin: 0 40px;
+            width: auto;
+            border-right:1px dashed lightgray ;
+            transform: translate(0, 100px);
+            transition: all 0.3s ease;          
+            
+        }
+        .section2 .sec2imgBox .iconBox5{
+            text-align: center;
+            display: block;
+            margin: 0 40px;
+            width: auto;
+            border-right:1px dashed lightgray ;
+            transform: translate(100px, 0);
+            transition: all 0.3s ease;          
+            
+        }
+        .iconBox1, .iconBox2, .iconBox3, .iconBox4, .iconBox5 {
+            opacity: 0;            
+            transition: all 0.3s ease;
+        }
+        .iconBox_on {
+            opacity: 1;
+            transform: translateY(0,0);
+        }
+        .section2 .sec2imgBox .iconBox h2{
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        /*세번째 화면(section3)*/
+        .section3{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 85vh;   
+            background-color: rgb(245, 237, 237);
+            padding: 0 50px;            
+            gap: 30px;
+         }   
+         .section3::before{
+            content:"";
+            position:absolute;
+            top:40px;            
+            bottom:40px;        
+            left:50%;         
+            width:0;
+            border-left:1.5px dashed #ccc;  
+            transform:translateX(-50%);    
+            z-index:0;
+         }
+         .section3 .leftBox, .section3 .rightBox{
+            width: 45%; 
+            display: flex;
+            align-items: center;           
+            gap: 100px;
+        }  
+        .section3 .leftBox{
+           flex-direction: row;  
+           margin-left: 50px;         
+        }
+        .section3 .leftBox img{
+            display: flex;
+            width: 350px;           
+            object-fit: contain;
+            margin-left: 40px;
+        }
+        .section3 .rightBox{
+            flex-direction: row;
+        }
+        .section3 .leftTextbox, .section3 .rightTextbox{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+            opacity: 0;
+            transform: translateX(-30px);
+            transition: all 0.6s ease;
+        } 
+        .section3 .leftTextbox.on, .section3 .rightTextbox.on{
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .section3 .rightBox img{
+            width: 280px;
+            height: auto;           
+            object-fit: contain;
+            margin-right: 10px;
+        }
+        .section3 .leftTextbox{
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;        
+        }
+        .section3 .rightTextbox{
+            right: 0;
+            bottom: 20%;
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;            
+            text-align: right;  
+
+        }
+         .section3 .leftBox h3{
+            top: 5px;
+            left: 5px;
+            font-size: 30px;
+            font-weight: bold;
+            color: lightgray;
+            margin: 0 0 4px;
+            text-shadow: 1px 1px 5px rgba(241, 234, 234, 0.952); 
+         }   
+         .section3 .leftBox h1{
+            font-size: 40px;
+            font-weight:bold;
+            color: rgb(38, 92, 38);     
+            margin: 0 0 10px;
+        }
+          .section3 .leftBox .se3letext{
+            font-size: 25px;
+            font-weight: 350;
+            color: rgb(68, 68, 68);
+            margin: 50px 0px;
+            margin-left: 100px;
+        }
+        .view3{
+            display:inline-flex;
+            align-items:center;
+            gap:10px;        
+            font-size:16px;
+            font-weight:700;
+            color:#222;
+            text-decoration:none;
+           
+         }  
+        .view3 .ball{
+            width:32px;
+            height:32px;
+            border-radius:50%;
+            background:#8CC63E;
+            display:inline-flex;
+            align-items:center;
+            justify-content:center;            
+        }   
+        .view3:hover{
+            background-color: #499167;
+            transform: translate(2px);    
+         }
+          .section3 .rightBox h3{
+            left: 5px;
+            font-size: 30px;
+            font-weight: bold;
+            color: lightgray;
+            margin: 0 0 4px;
+            text-shadow: 1px 1px 5px rgba(241, 234, 234, 0.952); 
+         }   
+         .section3 .rightBox h1{
+            font-size: 50px;
+            font-weight:bold;
+            color: rgb(38, 92, 38);     
+            margin: 0 0 10px;
+        }
+        .section3 .rightBox .se3rigtext{
+            font-size: 25px;
+            font-weight: 350;
+            color: rgb(68, 68, 68);
+            margin: 50px 0px;
+            margin-left: 100px;
+        }
+        /*네번째 화면(section4)*/
+        .section4{
+            width: 100%;
+            height: 100vh;   
+            background-color: rgb(6, 63, 46);
+            color: white;
+            padding: 60px 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 100px;
+            padding: 60px 50px;           
+        }
+        .section4 .leftTextbox h1{
+            font-size: 60px;
+            font-weight: bold;
+            line-height: 1.4;
+            margin-bottom: 30px;
+            color: #fff;
+            margin-left: 120px;
+            z-index: 1;
+        }
+        .section4 .leftTextbox h1:first-child{
+            position: relative;
+            font-size: 45px;
+            font-weight: bold;
+            line-height: 1.4;
+            margin-bottom: 30px;
+        }
+        .section4 .leftTextbox h1:first-child::before{
+            content: "";
+            position: absolute;
+            top: -0px;
+            left: -10px;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: #00c853;
+            z-index: -1;
+        }
+        .section4 .leftTextbox h6{
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            border-bottom: 2px solid white;
+            margin-top: 150px;
+            margin-left: 130px;
+            display: inline-flex;
+            align-items: center;
+            gap:10px; 
+            color: #fff;
+         }
+        .section4 .leftTextbox h6:hover{
+            color: #5dad7f;    
+           }
+        .section4 .leftTextbox h6 i{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .view3 .ball{
+            width:32px;
+            height:32px;
+            border-radius:50%;
+            background:#d6dfcb;
+            display:inline-flex;
+            align-items:center;
+            justify-content:center;            
+        }   
+        .section4 .rightTextbox{
+            width: 1200px;           
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .section4 .rightTextbox h2{
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 1.6;
+            border-bottom: 1px solid white;
+            border-top: 1px solid white;
+            padding: 40px 0;
+            margin: 0;
+            cursor: pointer;
+            color: #fff;
+
+        }  
+        .section4 .leftTextbox, .section4 .rightTextbox {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        .section4 .leftTextbox, .section4 .rightTextbox {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: 0.7s ease;
+            }
+        .reveal.on {
+            opacity: 1;
+            transform: translateY(0);
+            }
+        
+         /*다섯번째 화면(section5)*/
+        .section5{
+            width: 100%;
+            height: 100vh;   
+            background-color: rgb(248, 243, 243);
+            padding: 80px 150px;
+            text-align: left;
+        }
+        .section5 .mainBox h1{
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 1.4;
+            margin-bottom: 50px;
+            line-height: 1.6;
+            color: rgb(151, 138, 138);
+            z-index: 1;
+        }
+        .section5 .mainBox h1:first-child{
+            position: relative;
+            font-size: 35px;
+            font-weight: bold;
+            line-height: 1.4;
+            margin-bottom: 30px;
+        }
+        .section5 .mainBox h1:first-child::before{
+            content: "";
+            position: absolute;
+            top: -0px;
+            left: -10px;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: #00c853;
+            z-index: -1;
+        }
+        .section5 .mainBox h2{
+            font-size: 40px;
+            font-weight: bold;
+            line-height: 1.4;
+            margin-bottom: 50px;
+            line-height: 1.6;
+           
+        }
+        .sec5imgBox{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+            
+        .sec5imgBox img{
+            display: block;    
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .card{
+            position: relative;
+            overflow: hidden;
+        }
+        .cardtext{
+            position: absolute;
+            font-size: 20px;
+            bottom: 20px;
+            left: 20px;
+            color: #fff;
+        }
+        .cardtext h2{ 
+            margin:0; 
+            font-size: 34px; 
+            color: #fff;
+            line-height:1.15;  
+              
+        }
+        /*Footer화면*/
+        footer{
+            position: relative;
+            width: 100%;
+            height: auto;
+            background-color:black;
+            padding: 40px 80px;           
+            color: #fff ;
+        }
+        .footer1{
+            display: flex;
+            position: relative;                                   
+            padding-bottom: 10px;
+            margin-bottom: 50px;
+            color: #fff;
+            gap: 50px;            
+            font-size: 14px;
+            font-weight: 700;
+         } 
+         .footer1::after{
+            content: "";
+            position: absolute;
+            display: block;
+            width: 2000px;  
+            border-bottom: 1px dashed rgba(255,255,255,.4);
+            left: 0; top:50px;      
+            bottom: 20px;     
+         }
+        .footer2{
+           display: flex; 
+           color: #fff;
+           gap: 10px 30px; 
+           
+        }
+        .footer2 h5{
+            font-size: 15px;
+            font-weight: lighter;
+         }
+         .footer2 h5 + h5::before{
+            border-right: 1px solid white;
+            margin: 10px 14px;
+         }         
+         .footer2 p{
+            font-size: 15px;
+            margin-top: 20px;
+            margin-left: 10px;
+         }
+         .site-footer .copyright {
+            flex-basis: 100%;  
+            text-align: left;  
+            margin-top: 20px;
+            font-size: 13px;
+            opacity: .9;
+        } 
+        
+        
+       
